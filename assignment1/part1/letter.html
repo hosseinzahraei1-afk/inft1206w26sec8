@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!- Name: Hossein Abdolzahraei
-	File: filename.html
-	Date: XX September 202X
-	A very brief description of the file.
+    <!-- Name: Hossein Abdolzahraei
+	File: letter.html
+	Date: 26 January, 2026
+	Marking up a letter.
+    -->
 
-    --->
-    <title>Document</title>
+         <title>Document</title>
 </head>
 <body>
-<address>
-    Dr. Eleanor Gaye <br>
-Awesome Science faculty <br> 
-University of Awesome <br>
-Bobtown, CA 99999, <br>
-USA <br>
-Tel: 123-456-7890 <br>
-Email: no_reply@example.com <br>
 
-20 January 2016 <br>
-</address>
+    <address>
+        <strong>Dr. Eleanor Gaye</strong> <br>
+    <class column="sender"> Awesome Science faculty <br> 
+    University of Awesome <br>
+    Bobtown, CA 99999, <br>
+    USA <br> </class>
+    <strong>Tel: 123-456-7890</strong> <br>
+    <strong>Email: no_reply@example.com</strong> <br>
+    
+    <class column="sender"><time datetime="2016-01-20">20 January 2016</time> <br> </class>
+    </address>
+
 <address>
-    Miss Eileen Dover <br>
+    <strong>Miss Eileen Dover</strong> <br>
     4321 Cliff Top Edge <br>
     Dover, CT9 XXX <br>
     UK <br>
@@ -37,7 +39,7 @@ Email: no_reply@example.com <br>
 <p>
     Thank you for your recent application to join us at the University of
     Awesome's science faculty to study as part of your
-    <abbr>PhD</abbr> (Doctor of Philosophy) next year. I will answer your
+    <abbr title="(Doctor of Philosophy)"> PhD. </abbr> next year. I will answer your
     questions one by one, in the following sections.
 </p>
 
@@ -52,9 +54,9 @@ Email: no_reply@example.com <br>
 </p>
 
 <ol>
-    <li>First semester: 9 September 2016</li>
-    <li>Second semester: 15 January 2017</li>
-    <li>Third semester: 2 May 2017</li>
+    <li> <time datetime="2016-09-09"> First semester: 9 September 2016 </time> </li>
+    <li> <time datetime="2017-01-15"> Second semester: 15 January 2017 </time> </li>
+    <li> <time datetime="2017-05-02"> Third semester: 2 May 2017 </time> </li>
 
 </ol>
 
@@ -85,8 +87,8 @@ Email: no_reply@example.com <br>
             (effect of 10^3 increasing to 10^4).
         </li>
         <li>
-            HTML, Hypertext Markup Language, and CSS,
-            Cascading Style Sheets, constructs for representing musical scores.
+            <Abbr title="Hypertext Markup Language"> HTML </Abbr>, and <Abbr title="Cascading Style Sheets"> CSS </Abbr>,
+            constructs for representing musical scores.
         </li>
 </ul>
 
@@ -109,7 +111,7 @@ Email: no_reply@example.com <br>
         <dt>Polynesian chicken dance</dt>
             <dd>
                 A little known but very influential dance dating back as far as
-                300 BCE, a whole village would
+                300 <Abbr title="Before Common Era"> BCE </Abbr>, a whole village would
                 dance around in a circle like chickens, to encourage their livestock to
                 be "fruitful".
             </dd>
@@ -141,7 +143,7 @@ Email: no_reply@example.com <br>
 
 <p>
     University of Awesome motto: Be awesome to each other. --
-    The memoirs of Bill S Preston, Esq.
+    The memoirs of Bill S Preston,<Abbr title="Esquire"> Esq </Abbr>.
 </p>
 </body>
 </html>
