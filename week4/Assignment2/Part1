@@ -1,9 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Creepy crawlies!</title>
-    <link href="style.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Name: Hossein Abdolzahraei
+	File: letter.html
+	Date: 06 February, 2026
+	Images and Video page.
+    -->
+  <title>Creepy Crawlies!</title>
+  <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
