@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Planet Data Table</title>
-    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1>Planet Data Table</h1>
-<Table border="1">
+<Table>
 <caption>Data about the planets of our solar system (Planetary facts 
     taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">
     Nasa's Planetary Fact Sheet - Metric</a>).</caption>
- <thead>
-    <tr>
-     
-            <th scope="col"> </th>
+ 
+    <colgroup>
+    <col span="2" >
+    <col class="column-border" >
+    <col span="9" >
+</colgroup>
+ 
+    <thead>
+    <tr> 
+            <th scope="col" colspan="2"> </th>
             <th scope="col">Name</th>
             <th scope="col">Mass (10<sup>24</sup>kg)</th>
             <th scope="col">Diameter (km)</th>
@@ -26,13 +33,13 @@
             <th scope="col">Mean temperature (°C) </th>
             <th scope="col">Number of moons</th>
             <th scope="col">Notes</th>
-       
-    </tr>
+        </tr>
 </thead> 
+
  <tbody>
     <tr>
-        <th rowspan="4"> Terrestrial planets</th>
-       <th>Mercury</th>
+        <th rowspan="4" colspan="2" scope="rowgroup"> Terrestrial planets</th>
+       <th scope="row">Mercury</th>
         <td>0.330 </td>
         <td>4,879</td>
         <td>5427</td>
@@ -45,7 +52,7 @@
     </tr>
     
     <tr>
-        <th>Venus</th>
+        <th scope="row">Venus</th>
         <td>4.87</td>
         <td>12,104</td>
         <td>5243</td>
@@ -58,7 +65,7 @@
     </tr>
 
     <tr>
-     <th>Earth</th>
+     <th scope="row">Earth</th>
      <td>5.97</td>
      <td>12,756</td>
      <td>5514</td>
@@ -71,7 +78,7 @@
     </tr>
     
     <tr>
-        <th>Mars</th>
+        <th scope="row">Mars</th>
         <td>0.642</td>
         <td>6,792</td>
         <td>3933</td>
@@ -83,65 +90,63 @@
         <td>The red planet</td>
     </tr>
 
-    <tr>
-        <th rowspan="4" >Jovian Planets Gas giants Ice giants</th>
-        <th>Jupiter</th>
-        <td>1898</td>
-        <td>142,984</td>
-        <td>1326</td>
-        <td>23.1</td>
-        <td>9.9</td>
-        <td>778.6</td>
-        <td>-110</td>
-        <td>67</td>
-        <td>The largest planet</td>
-    </tr>
+            <tr>
+           <th scope="rowgroup" rowspan="4"> Jovian Planets </th>
+            <th scope="rowgroup" rowspan="2">Gas giants</th>
 
-    <tr>
-        <th>Saturn</th>
-        <td>568</td>
-        <td>120,536</td>
-        <td>687</td>
-        <td>9.0</td>
-        <td>10.7</td>
-        <td>1433.5</td>
-        <td>-140</td>
-        <td>62</td>
-        <td></td>
-    </tr>
-        
-    
-        <tr>
-            <th>Uranus</th>
-            <td>86.8</td>
-            <td>51,118</td>
-            <td>1271</td>
-            <td>8.7</td>
-            <td>17.2</td>
-            <td>2872.5</td>
-            <td>-195</td>
-            <td>27</td>
+        <th scope="row">Jupiter</th>
+            <td>1898</td>
+            <td>142,984</td>
+            <td>1326</td>
+            <td>23.1</td>
+            <td>9.9</td>
+            <td>778.6</td>
+            <td>-110</td>
+            <td>67</td>
+            <td>The largest planet</td>
+        </tr>
+
+            <tr>
+            <th scope="row">Saturn</th>
+            <td>568</td>
+            <td>120,536</td>
+            <td>687</td>
+            <td>9.0</td>
+            <td>10.7</td>
+            <td>1433.5</td>
+            <td>-140</td>
+            <td>62</td>
             <td></td>
-        </tr>       
-   
-  
-
+        </tr>
+            
+        <tr><th scope="rowgroup" rowspan="2">Ice giants</th>
+                <th scope="row">Uranus</th>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1271</td>
+                <td>8.7</td>
+                <td>17.2</td>
+                <td>2872.5</td>
+                <td>-195</td>
+                <td>27</td>
+                <td></td>
+            
+           <tr> 
+            <th scope="row">Neptune</th>
+            <td>102</td>
+            <td>49,528</td>
+            <td>1638</td>
+            <td>11.0</td>
+            <td>16.1</td>
+            <td>4495.1</td>
+            <td>-200</td>
+            <td>14</td>
+            <td></td>
+            </tr>
+    
     <tr>
-        <th>Neptune</th>
-        <td>102</td>
-        <td>49,528</td>
-        <td>1638</td>
-        <td>11.0</td>
-        <td>16.1</td>
-        <td>4495.1</td>
-        <td>-200</td>
-        <td>14</td>
-        <td></td>
-    </tr>
-        
-    <tr>
-        <th rowspan="2">Dwarf planets</th>
-        <th rowspan="2">Pluto</th>
+        <th scope= "rowgroup" colspan="2">Dwarf planets</th>
+        <th scope="row">Pluto</th>
         <td>0.0146</td>
         <td>2,370</td>
         <td>2095</td>
@@ -150,8 +155,8 @@
         <td>5906.4</td>
         <td>-225</td>
         <td>5</td>
-        <td>Declassified as a planet in 2006, but this remains 
-        <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">controversial</a>. 
+        <td>Declassified as a planet in 2006, but this 
+        <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>. 
         </td>
     </tr>
  </tbody>
