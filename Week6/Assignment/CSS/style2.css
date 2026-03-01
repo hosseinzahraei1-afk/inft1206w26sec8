@@ -9,8 +9,16 @@ body {
   padding: 0 20px;
   min-width: 980px;
   max-width: 1400px;
+ font: serif;
 }
 
+h1 {
+    font: Arial;
+}
+
+h2{
+    font: Arial;
+}
 /* Layout */
 
 main {
