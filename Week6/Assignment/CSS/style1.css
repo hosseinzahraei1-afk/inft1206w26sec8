@@ -13,7 +13,7 @@ body {
   margin-right: auto;
 }
 
-.ul{
+ul{
   background-color: white;
   border: solid 5px purple;
   padding: 30px;
@@ -23,6 +23,19 @@ body {
 h1 { 
   color: darkslategray;
   border-bottom: dotted 10px purple;
+  font-size: 2rem;
 }
 
+h2 {
+  font-style: em;
+  font-size: 1.5rem;
+}
 
+.jobtitle{
+  color: darkslategray;
+  font-weight: bold;
+}
+
+.link{
+  color: green;
+}
