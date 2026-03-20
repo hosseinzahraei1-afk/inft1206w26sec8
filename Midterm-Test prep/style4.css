@@ -1,0 +1,27 @@
+
+
+
+.color0 {
+    color:darkgreen
+}
+
+span{
+    color: goldenrod;
+}
+
+.color1{
+    color: blue;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+h1 {
+font-family:"Dancing Script", cursive;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+text-align: left;
+letter-spacing: 3px;
+}
+
