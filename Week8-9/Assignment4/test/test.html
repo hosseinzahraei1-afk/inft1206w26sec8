@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var person4 = {};
+// equivalent to: var person4 = new Object();
+person4.name = "James";
+person4.age = 30;
+person4.show = function () {
+console.log('My name is ' + this.name + ", and I'm "
++ this.age + " years old.");
+};
+person4.show();
+    </script>
+</body>
+</html>
