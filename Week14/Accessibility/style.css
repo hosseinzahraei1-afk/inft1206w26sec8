@@ -117,6 +117,12 @@ div[class="nav"] .search {
   color: white;
 }
 
+.search label {
+  font-size: 1.6rem;
+  font: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* || main layout */
 
 main {
